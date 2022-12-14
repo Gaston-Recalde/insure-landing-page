@@ -15,11 +15,11 @@ This is a solution to the [Insure landing page challenge on Frontend Mentor](htt
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](./images/insure-landing-page.png)
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: (https://admirable-narwhal-63ffa6.netlify.app)
 
 ## My process
 
