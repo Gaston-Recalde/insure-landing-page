@@ -1,0 +1,260 @@
+.header{
+    width: 100%;
+    position: fixed;
+    background-color: $very-light-gray;
+
+    .nav{
+        margin: 25px 20px;
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        align-items: center;
+
+        &__img{
+            height: fit-content;
+        }
+
+        &__ul{
+            display: none;
+        }
+
+        &__ul--active{
+            display: flex;
+            flex-direction: column;
+            background-color: $very-dark-violet;
+            color: $very-light-gray;
+            text-align: center;
+            gap: 25px;
+            font-size: 20px;
+            padding-top: 25px;
+            padding-bottom: 25px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin-top: 84.67px;
+
+            background-image: url('../images/bg-pattern-mobile-nav.svg');
+            background-repeat: no-repeat;
+            background-position: bottom right;
+
+            li{
+                width: 90%;
+                margin: 0 auto;
+                padding: 10px;
+                text-transform: uppercase;
+
+                &:last-child{
+                    border: 1px solid $very-light-gray;
+                }
+            }
+        }
+
+        &__menu{
+            display: inline-block;
+        }
+
+        &__menu--disabled{
+            display: none;
+        }
+
+        &__menu--close{
+            display: none;
+        }
+
+        &__menu--active{
+            display: inline-block;
+        }
+    }
+
+}
+
+.intro{
+    padding-top: 84.67px;
+    background-color: $dark-violet;
+    color: $very-light-gray;
+    text-align: center;
+
+    &__info{
+        margin: auto;
+        padding-top: 75px;
+        padding-bottom: 75px;
+        background-image: url('../images/bg-pattern-intro-left-mobile.svg'), url('../images/bg-pattern-intro-right-mobile.svg');
+        background-repeat: no-repeat;
+        background-position:top left, bottom -175px right;
+
+        h2{
+            font-size: 46px;
+            font-weight: 400;
+            line-height: 1.2;
+            width: 86%;
+            margin: auto;
+        }
+
+        p{
+            margin: 25px auto;
+            font-size: 16px;
+            line-height: 1.5;
+            width: 86%;
+        }
+
+        button{
+            background-color: transparent;
+            border: 1px solid $very-light-gray;
+            padding: 10px 20px;
+            text-transform: uppercase;
+            color: $very-light-gray;
+            font-size: 12px;
+        }
+    }
+}
+
+.info{
+    background-color: $very-light-gray;
+    background-image: url('../images/bg-pattern-intro-right-mobile.svg');
+    background-repeat: no-repeat;
+    background-position: top -154px right;
+
+    &__container{
+        text-align: center;
+        padding-top: 75px;
+
+        hr{
+            width: 50%;
+            margin: auto;
+            margin-bottom: 35px;
+        }
+
+        h2{
+            font-size: 46px;
+            font-weight: 400;
+            margin-bottom: 50px;
+        }
+
+    }
+
+    &__cards{
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 75px;
+
+        .card{
+            width: 86%;
+            margin: auto;
+            margin-bottom: 50px;
+
+            img{
+                margin-bottom: 25px;
+            }
+
+            h3{
+                font-size: 28px;
+                font-weight: 400;
+                margin-bottom: 15px;
+            }
+
+            p{
+                font-size: 16px;
+                color: $dark-grayish-violet;
+                line-height: 1.5;
+            }
+        }
+    }
+}
+
+.find{
+    width: 86%;
+    background-color: $dark-violet;
+    background-image: url('../images/bg-pattern-how-we-work-mobile.svg');
+    background-repeat: no-repeat;
+    background-position: top right;
+    color: $very-light-gray;
+    margin: auto;
+    text-align: center;
+    padding: 75px 0;
+    margin-bottom: 125px;
+
+    h3{
+        width: 80%;
+        font-size: 36px;
+        font-weight: 400;
+        margin: auto;
+        margin-bottom: 35px;
+    }
+
+    button{
+        background-color: transparent;
+        color: $very-light-gray;
+        padding: 10px 20px;
+        border: 1px solid $very-light-gray;
+        text-transform: uppercase;
+        font-size: 12px;
+    }
+}
+
+.footer{
+    background-image: url('../images/bg-pattern-footer-mobile.svg');
+    background-repeat: no-repeat;
+    background-color: $very-light-gray;
+
+    &__container{
+        width: 86%;
+        margin: auto;
+    }
+
+    &__head{
+        padding-top: 75px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+        border-bottom: 1px solid $dark-grayish-violet;
+
+        img{
+            height: 18px;
+            width: 118px;
+        }
+
+        .social{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 35px;
+
+            i{
+                font-size: 32px;
+                color: $dark-grayish-violet;
+            }
+        }
+    }
+
+    &__info{
+        margin-top: 35px;
+        display: flex;
+        flex-direction: column;
+
+        .links{
+            text-align: center;
+
+            span{
+                color: $dark-grayish-violet;
+                font-size: 14px;
+                text-transform: uppercase;
+                font-weight: 700;
+            }
+
+            ul{
+                margin: 25px auto;
+
+                li{
+                    font-size: 15px;
+                    color: $dark-violet;
+                    margin-bottom: 15px;
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+}
