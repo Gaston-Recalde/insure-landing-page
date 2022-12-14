@@ -23,6 +23,7 @@ h1, h2, h3, h4, h5, h6 {
 .attribution {
   font-size: 11px;
   text-align: center;
+  margin-bottom: 25px;
 }
 
 .attribution a {
@@ -105,6 +106,9 @@ h1, h2, h3, h4, h5, h6 {
   background-repeat: no-repeat;
   background-position: top left, bottom -175px right;
 }
+.intro__info hr {
+  display: none;
+}
 .intro__info h2 {
   font-size: 46px;
   font-weight: 400;
@@ -125,6 +129,9 @@ h1, h2, h3, h4, h5, h6 {
   text-transform: uppercase;
   color: hsl(0deg, 0%, 98%);
   font-size: 12px;
+}
+.intro__img .intro__desktop {
+  display: none;
 }
 
 .info {
@@ -253,4 +260,241 @@ h1, h2, h3, h4, h5, h6 {
   color: hsl(256deg, 26%, 20%);
   margin-bottom: 15px;
   font-weight: 700;
+}
+
+@media screen and (min-width: 768px) {
+  .intro__info {
+    text-align: left;
+  }
+  .intro__info h2 {
+    font-size: 56px;
+    text-align: left;
+    width: 80%;
+    margin-left: 12%;
+  }
+  .intro__info p {
+    width: 70%;
+    text-align: left;
+    margin-left: 12%;
+  }
+  .intro__info button {
+    margin-left: 12%;
+  }
+  .info__container {
+    text-align: left;
+    width: 86%;
+    margin: auto;
+  }
+  .info__container hr {
+    width: 200px;
+    display: inline-block;
+  }
+  .info__container h2 {
+    font-size: 56px;
+  }
+  .info__cards {
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+  .info__cards .card {
+    max-width: 350px;
+    margin: inherit;
+  }
+  .find {
+    display: flex;
+    align-items: center;
+    text-align: inherit;
+  }
+  .find h3 {
+    width: 51%;
+    font-size: 42px;
+    margin-left: 10%;
+  }
+  .find button {
+    margin-right: 10%;
+  }
+  .footer__head {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .footer__head img {
+    margin-bottom: 35px;
+  }
+  .footer__head .social {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  .footer__info {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .footer__info .links {
+    text-align: left;
+  }
+  .footer__info .links ul li {
+    border-bottom: 1px solid transparent;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .header {
+    height: 85px;
+    z-index: 1000;
+  }
+  .header .nav {
+    width: 86%;
+    margin: 25px auto;
+  }
+  .header .nav__menu {
+    display: none;
+  }
+  .header .nav__ul {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+  }
+  .header .nav__ul li {
+    font-size: 16px;
+    text-transform: uppercase;
+    color: hsl(273deg, 4%, 51%);
+  }
+  .header .nav__ul li:last-child {
+    border: 1px solid hsl(270deg, 9%, 17%);
+    padding: 5px 20px;
+    color: hsl(270deg, 9%, 17%);
+  }
+  .header .nav__ul li:last-child:hover {
+    cursor: pointer;
+    color: hsl(0deg, 0%, 98%);
+    background-color: hsl(270deg, 9%, 17%);
+  }
+  .header .nav__ul li:hover {
+    cursor: pointer;
+    color: hsl(270deg, 9%, 17%);
+  }
+  .intro {
+    position: relative;
+    height: 650px;
+  }
+  .intro__img {
+    width: 50%;
+  }
+  .intro__img .intro__mobile {
+    display: none;
+  }
+  .intro__img .intro__desktop {
+    display: block;
+    position: absolute;
+    right: 7%;
+    top: 25%;
+    width: 35%;
+  }
+  .intro__info {
+    height: 100%;
+    background-image: url("../images/bg-pattern-intro-left-desktop.svg"), url("../images/bg-pattern-intro-right-desktop.svg");
+    background-repeat: no-repeat;
+    background-position: bottom -335px left, top -85px right;
+  }
+  .intro__info hr {
+    display: inline-block;
+    width: 150px;
+    margin-left: 7%;
+    margin-bottom: 50px;
+  }
+  .intro__info h2 {
+    width: 50%;
+    margin-left: 7%;
+    font-size: 68px;
+  }
+  .intro__info p {
+    width: 50%;
+    margin-left: 7%;
+  }
+  .intro__info button {
+    margin-left: 7%;
+  }
+  .intro__info button:hover {
+    cursor: pointer;
+    color: hsl(270deg, 9%, 17%);
+    background-color: hsl(0deg, 0%, 98%);
+  }
+  .info {
+    background-image: url("../images/bg-pattern-intro-left-desktop.svg");
+    background-position: top -168px left;
+    background-repeat: no-repeat;
+  }
+  .info__container {
+    padding-top: 175px;
+  }
+  .info__container h2 {
+    font-size: 68px;
+  }
+  .info__cards {
+    flex-direction: row;
+    gap: 15px;
+    padding-bottom: 150px;
+  }
+  .find {
+    padding: 50px 0;
+    background-image: url("../images/bg-pattern-how-we-work-desktop.svg");
+    background-position: top right;
+  }
+  .find h3 {
+    width: 50%;
+    font-size: 50px;
+    margin-left: 7%;
+    margin-bottom: 0;
+  }
+  .find button {
+    margin-right: 7%;
+  }
+  .find button:hover {
+    cursor: pointer;
+    color: hsl(270deg, 9%, 17%);
+    background-color: hsl(0deg, 0%, 98%);
+  }
+  .footer__head .social i:hover {
+    cursor: pointer;
+    color: hsl(270deg, 9%, 17%);
+  }
+  .footer__info {
+    max-width: 1024px;
+  }
+  .footer__info .links ul li:hover {
+    cursor: pointer;
+    border-bottom: 1px solid hsl(270deg, 9%, 17%);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header .nav {
+    max-width: 1200px;
+  }
+  .intro__img .intro__desktop {
+    width: 40%;
+  }
+  .intro__info h2 {
+    font-size: 72px;
+    width: 45%;
+  }
+  .intro__info p {
+    width: 45%;
+  }
+  .info__cards {
+    justify-content: space-between;
+  }
+  .find h3 {
+    width: 43%;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .intro__img .intro__desktop {
+    top: 24.6%;
+    width: 576px;
+  }
+  .intro__info h2 {
+    width: 530px;
+  }
+  .intro__info p {
+    width: 535px;
+  }
 }/*# sourceMappingURL=style.css.map */
